@@ -2,7 +2,7 @@
 
 ## Getting started
 
-`$ npm install react-native-geocoder --save`
+`$ yarn add https://github.com/rnaufal32/react-native-geocoder`
 
 ### Mostly automatic installation
 
@@ -12,6 +12,10 @@
 ```javascript
 import NativeGeocoder from 'react-native-geocoder';
 
-// TODO: What to do with the module?
-NativeGeocoder;
+NativeGeocoder.getFullAddress(-6.8817, 108.4620, (message) => {
+    this.setState({
+    message
+    });
+});
+
 ```
